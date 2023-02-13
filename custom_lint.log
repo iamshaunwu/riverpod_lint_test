@@ -1,0 +1,56 @@
+[StatelessToStatefulProvider] 2023-02-13T16:55:01.809191 Plugin StatelessToStatefulProvider threw while analyzing /Users/shaunwu/Projects/apps/riverpod_lint_test/lib/main.dart:
+[StatelessToStatefulProvider] 2023-02-13T16:55:01.809191 RiverpodAnalysisException: No AsyncValue accessible in the library. Did you forget to import Riverpod?
+[StatelessToStatefulProvider] 2023-02-13T16:55:01.809191 #0      RiverpodLibraryExtension.findAsyncValue (package:riverpod_analyzer_utils/src/riverpod_visitor.dart:44:7)
+[StatelessToStatefulProvider] 2023-02-13T16:55:01.809191 #1      RiverpodLibraryExtension.createdTypeToValueType (package:riverpod_analyzer_utils/src/riverpod_visitor.dart:53:24)
+[StatelessToStatefulProvider] 2023-02-13T16:55:01.809191 #2      _computeExposedType (package:riverpod_analyzer_utils/src/riverpod_ast.dart:886:20)
+[StatelessToStatefulProvider] 2023-02-13T16:55:01.809191 #3      StatelessProviderDeclaration.parse (package:riverpod_analyzer_utils/src/riverpod_ast.dart:1001:20)
+[StatelessToStatefulProvider] 2023-02-13T16:55:01.809191 #4      RiverpodRegistry.addStatelessProviderDeclaration.<anonymous closure> (package:riverpod_analyzer_utils/src/riverpod_visitor.dart:275:56)
+[StatelessToStatefulProvider] 2023-02-13T16:55:01.809191 #5      _rootRunUnary (dart:async/zone.dart:1414:13)
+[StatelessToStatefulProvider] 2023-02-13T16:55:01.809191 #6      _CustomZone.runUnary (dart:async/zone.dart:1307:19)
+[StatelessToStatefulProvider] 2023-02-13T16:55:01.809191 #7      LinterVisitor._runSubscriptions (package:custom_lint_core/src/node_lint_visitor.dart:1034:27)
+[StatelessToStatefulProvider] 2023-02-13T16:55:01.809191 #8      LinterVisitor.visitFunctionDeclaration (package:custom_lint_core/src/node_lint_visitor.dart:405:5)
+[StatelessToStatefulProvider] 2023-02-13T16:55:01.809191 #9      FunctionDeclarationImpl.accept (package:analyzer/src/dart/ast/ast.dart:5957:50)
+[StatelessToStatefulProvider] 2023-02-13T16:55:01.809191 #10     NodeListImpl.accept (package:analyzer/src/dart/ast/ast.dart:9445:20)
+[StatelessToStatefulProvider] 2023-02-13T16:55:01.809191 #11     CompilationUnitImpl.visitChildren (package:analyzer/src/dart/ast/ast.dart:2596:21)
+[StatelessToStatefulProvider] 2023-02-13T16:55:01.809191 #12     LinterVisitor.visitCompilationUnit (package:custom_lint_core/src/node_lint_visitor.dart:184:10)
+[StatelessToStatefulProvider] 2023-02-13T16:55:01.809191 #13     CompilationUnitImpl.accept (package:analyzer/src/dart/ast/ast.dart:2589:50)
+[StatelessToStatefulProvider] 2023-02-13T16:55:01.809191 #14     DartAssist.startUp.<anonymous closure> (package:custom_lint_core/src/assist.dart:80:17)
+[StatelessToStatefulProvider] 2023-02-13T16:55:01.809191 #15     _rootRun (dart:async/zone.dart:1398:13)
+[StatelessToStatefulProvider] 2023-02-13T16:55:01.809191 #16     _CustomZone.run (dart:async/zone.dart:1300:19)
+[StatelessToStatefulProvider] 2023-02-13T16:55:01.809191 #17     _CustomZone.bindCallback.<anonymous closure> (dart:async/zone.dart:1232:23)
+[StatelessToStatefulProvider] 2023-02-13T16:55:01.809191 #18     runPostRunCallbacks (package:custom_lint_core/src/plugin_base.dart:14:19)
+[StatelessToStatefulProvider] 2023-02-13T16:55:01.809191 #19     _ClientAnalyzerPlugin.handleEditGetAssists (package:custom_lint_builder/src/client.dart:447:5)
+[StatelessToStatefulProvider] 2023-02-13T16:55:01.809191 <asynchronous suspension>
+[StatelessToStatefulProvider] 2023-02-13T16:55:01.809191 #20     ServerPlugin._getResponse (package:analyzer_plugin/plugin/plugin.dart:564:18)
+[StatelessToStatefulProvider] 2023-02-13T16:55:01.809191 <asynchronous suspension>
+[StatelessToStatefulProvider] 2023-02-13T16:55:01.809191 #21     ServerPlugin._onRequest (package:analyzer_plugin/plugin/plugin.dart:611:18)
+[StatelessToStatefulProvider] 2023-02-13T16:55:01.809191 <asynchronous suspension>
+[StatelessToStatefulProvider] 2023-02-13T16:55:01.809191
+[StatefulToStatelessProvider] 2023-02-13T16:55:01.810461 Plugin StatefulToStatelessProvider threw while analyzing /Users/shaunwu/Projects/apps/riverpod_lint_test/lib/main.dart:
+[StatefulToStatelessProvider] 2023-02-13T16:55:01.810461 RiverpodAnalysisException: No AsyncValue accessible in the library. Did you forget to import Riverpod?
+[StatefulToStatelessProvider] 2023-02-13T16:55:01.810461 #0      RiverpodLibraryExtension.findAsyncValue (package:riverpod_analyzer_utils/src/riverpod_visitor.dart:44:7)
+[StatefulToStatelessProvider] 2023-02-13T16:55:01.810461 #1      RiverpodLibraryExtension.createdTypeToValueType (package:riverpod_analyzer_utils/src/riverpod_visitor.dart:53:24)
+[StatefulToStatelessProvider] 2023-02-13T16:55:01.810461 #2      _computeExposedType (package:riverpod_analyzer_utils/src/riverpod_ast.dart:886:20)
+[StatefulToStatelessProvider] 2023-02-13T16:55:01.810461 #3      StatefulProviderDeclaration.parse (package:riverpod_analyzer_utils/src/riverpod_ast.dart:946:20)
+[StatefulToStatelessProvider] 2023-02-13T16:55:01.810461 #4      RiverpodRegistry.addStatefulProviderDeclaration.<anonymous closure> (package:riverpod_analyzer_utils/src/riverpod_visitor.dart:259:55)
+[StatefulToStatelessProvider] 2023-02-13T16:55:01.810461 #5      _rootRunUnary (dart:async/zone.dart:1414:13)
+[StatefulToStatelessProvider] 2023-02-13T16:55:01.810461 #6      _CustomZone.runUnary (dart:async/zone.dart:1307:19)
+[StatefulToStatelessProvider] 2023-02-13T16:55:01.810461 #7      LinterVisitor._runSubscriptions (package:custom_lint_core/src/node_lint_visitor.dart:1034:27)
+[StatefulToStatelessProvider] 2023-02-13T16:55:01.810461 #8      LinterVisitor.visitClassDeclaration (package:custom_lint_core/src/node_lint_visitor.dart:159:5)
+[StatefulToStatelessProvider] 2023-02-13T16:55:01.810461 #9      ClassDeclarationImpl.accept (package:analyzer/src/dart/ast/ast.dart:2080:50)
+[StatefulToStatelessProvider] 2023-02-13T16:55:01.810461 #10     NodeListImpl.accept (package:analyzer/src/dart/ast/ast.dart:9445:20)
+[StatefulToStatelessProvider] 2023-02-13T16:55:01.810461 #11     CompilationUnitImpl.visitChildren (package:analyzer/src/dart/ast/ast.dart:2596:21)
+[StatefulToStatelessProvider] 2023-02-13T16:55:01.810461 #12     LinterVisitor.visitCompilationUnit (package:custom_lint_core/src/node_lint_visitor.dart:184:10)
+[StatefulToStatelessProvider] 2023-02-13T16:55:01.810461 #13     CompilationUnitImpl.accept (package:analyzer/src/dart/ast/ast.dart:2589:50)
+[StatefulToStatelessProvider] 2023-02-13T16:55:01.810461 #14     DartAssist.startUp.<anonymous closure> (package:custom_lint_core/src/assist.dart:80:17)
+[StatefulToStatelessProvider] 2023-02-13T16:55:01.810461 #15     _rootRun (dart:async/zone.dart:1398:13)
+[StatefulToStatelessProvider] 2023-02-13T16:55:01.810461 #16     _CustomZone.run (dart:async/zone.dart:1300:19)
+[StatefulToStatelessProvider] 2023-02-13T16:55:01.810461 #17     _CustomZone.bindCallback.<anonymous closure> (dart:async/zone.dart:1232:23)
+[StatefulToStatelessProvider] 2023-02-13T16:55:01.810461 #18     runPostRunCallbacks (package:custom_lint_core/src/plugin_base.dart:14:19)
+[StatefulToStatelessProvider] 2023-02-13T16:55:01.810461 #19     _ClientAnalyzerPlugin.handleEditGetAssists (package:custom_lint_builder/src/client.dart:447:5)
+[StatefulToStatelessProvider] 2023-02-13T16:55:01.810461 <asynchronous suspension>
+[StatefulToStatelessProvider] 2023-02-13T16:55:01.810461 #20     ServerPlugin._getResponse (package:analyzer_plugin/plugin/plugin.dart:564:18)
+[StatefulToStatelessProvider] 2023-02-13T16:55:01.810461 <asynchronous suspension>
+[StatefulToStatelessProvider] 2023-02-13T16:55:01.810461 #21     ServerPlugin._onRequest (package:analyzer_plugin/plugin/plugin.dart:611:18)
+[StatefulToStatelessProvider] 2023-02-13T16:55:01.810461 <asynchronous suspension>
+[StatefulToStatelessProvider] 2023-02-13T16:55:01.810461
