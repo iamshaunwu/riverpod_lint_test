@@ -14,6 +14,12 @@ FutureOr<int> getNumber(GetNumberRef ref) async {
   return results;
 }
 
+@riverpod
+class GetAnotherNumber extends _$GetAnotherNumber {
+  @override
+  Future<int> build() async => await Future.delayed(const Duration(seconds: 1));
+}
+
 class MainApp extends StatelessWidget {
   const MainApp({super.key});
 

@@ -6,6 +6,22 @@ part of 'main.dart';
 // RiverpodGenerator
 // **************************************************************************
 
+String _$getAnotherNumberHash() => r'9cab863f48f5eb2b3f3561162c69a712e78e3e39';
+
+/// See also [GetAnotherNumber].
+@ProviderFor(GetAnotherNumber)
+final getAnotherNumberProvider =
+    AutoDisposeAsyncNotifierProvider<GetAnotherNumber, int>.internal(
+  GetAnotherNumber.new,
+  name: r'getAnotherNumberProvider',
+  debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
+      ? null
+      : _$getAnotherNumberHash,
+  dependencies: null,
+  allTransitiveDependencies: null,
+);
+
+typedef _$GetAnotherNumber = AutoDisposeAsyncNotifier<int>;
 String _$getNumberHash() => r'8ff141f10d1a522736e1f21648a060644ff180e3';
 
 /// See also [getNumber].
